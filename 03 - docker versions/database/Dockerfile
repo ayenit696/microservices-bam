@@ -1,5 +1,5 @@
 #note using an older version of mysql as v8+ is harder to check
-FROM --platform=linux/amd64 mysql5.7
+FROM --platform=linux/amd64 mysql:5.7
 ARG DBPASSWORD
 ENV MYSQL_ROOT_PASSWORD=${DBPASSWORD}
 ENV MYSQL_DATABASE=usermanager
